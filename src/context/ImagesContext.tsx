@@ -1,93 +1,114 @@
-import {useEffect, useState, useCallback, useRef, ReactNode, createContext, useContext, RefObject} from 'react'
+import {
+  useEffect,
+  useState,
+  useCallback,
+  useRef,
+  ReactNode,
+  createContext,
+  useContext,
+  RefObject,
+} from "react";
 
 interface ImagesProviderProps {
-    children: ReactNode
+  children: ReactNode;
 }
 
 interface ImagesContextProps {
-    width: number,
-    sameRatio: boolean,
-    offsetY: number,
-    handleClick: () => void,
-    displayNone: () => void,
-    buttonRef: RefObject<HTMLButtonElement>,
-    visible: boolean
+  width: number;
+  sameRatio: boolean;
+  offsetY: number;
+  handleClick: () => void;
+  displayNone: () => void;
+  buttonRef: RefObject<HTMLButtonElement>;
+  visible: boolean;
 }
 
-const ImagesContext = createContext<ImagesContextProps|undefined>(undefined)
+const ImagesContext = createContext<ImagesContextProps | undefined>(undefined);
 
-function ImagesProvider({children} : ImagesProviderProps) {
+function ImagesProvider({ children }: ImagesProviderProps) {
+  const [width, setWidth] = useState<number>(window.innerWidth);
+  const [height, setHeight] = useState<number>(window.innerHeight);
+  const [sameRatio, setSameRatio] = useState<boolean>(false);
+  const [offsetY, setOffsetY] = useState<number>(0);
+  const [visible, setVisible] = useState<boolean>(true);
 
-    const[width, setWidth] = useState<number>(window.innerWidth);
-    const[height, setHeight] = useState<number>(window.innerHeight);
-    const[sameRatio, setSameRatio] = useState<boolean>(false);
-    const[offsetY, setOffsetY] = useState<number>(0);
-    const[visible, setVisible] = useState<boolean>(true);
+  const buttonRef = useRef<HTMLButtonElement>(null);
 
-    const buttonRef = useRef<HTMLButtonElement>(null);
+  const handleClick = useCallback(function handleClick() {
+    setOffsetY(50);
+    setVisible(false);
+  }, []);
 
-    const handleClick = useCallback(function handleClick() {
-        setOffsetY(50);
-        setVisible(false);
-    }, [])
-
-    function changeObjectFit() {
+  function changeObjectFit() {
     setWidth(window.innerWidth);
     setHeight(window.innerHeight);
-    }
+  }
 
-    function scrollFromTop() {
-        if(window.scrollY > 100) return;
-        else if(window.scrollY === 0 && buttonRef.current) {
-        setOffsetY(window.scrollY);
-        setVisible(true);
-        buttonRef.current.style.display = "block"
-        }
-        else {
-        setOffsetY(window.scrollY);
-        setVisible(false);
-        }
+  function scrollFromTop() {
+    if (window.scrollY > 100) return;
+    else if (window.scrollY === 0 && buttonRef.current) {
+      setOffsetY(window.scrollY);
+      setVisible(true);
+      buttonRef.current.style.display = "block";
+    } else {
+      setOffsetY(window.scrollY);
+      setVisible(false);
     }
+  }
 
-    function displayNone() {
-        if(buttonRef.current && !visible) {
-        buttonRef.current.style.display ="none";
-        }
+  function displayNone() {
+    if (buttonRef.current && !visible) {
+      buttonRef.current.style.display = "none";
     }
+  }
 
-    useEffect(() => {
+  useEffect(() => {
     window.addEventListener("resize", changeObjectFit);
 
     return () => {
-        window.removeEventListener("resize", changeObjectFit);
+      window.removeEventListener("resize", changeObjectFit);
     };
-    }, [])
+  }, []);
 
-    useEffect(() => {
+  useEffect(() => {
     document.addEventListener("scroll", scrollFromTop);
 
     return () => {
-        document.removeEventListener("scroll", scrollFromTop);
+      document.removeEventListener("scroll", scrollFromTop);
     };
-    }, [])
+  }, []);
 
-    useEffect(() => {
-    if(innerWidth/innerHeight === 16/9 ||innerWidth/innerHeight === 16/10) {
-        setSameRatio(true);
+  useEffect(() => {
+    if (
+      innerWidth / innerHeight === 16 / 9 ||
+      innerWidth / innerHeight === 16 / 10
+    ) {
+      setSameRatio(true);
     } else setSameRatio(false);
-    }, [innerWidth, innerHeight])
+  }, []);
 
-    return(
-        <ImagesContext.Provider value={{width, sameRatio, offsetY, handleClick, displayNone, buttonRef, visible}}>
-            {children}
-        </ImagesContext.Provider>
-    )
+  return (
+    <ImagesContext.Provider
+      value={{
+        width,
+        sameRatio,
+        offsetY,
+        handleClick,
+        displayNone,
+        buttonRef,
+        visible,
+      }}
+    >
+      {children}
+    </ImagesContext.Provider>
+  );
 }
 
 function useImages() {
-    const context = useContext(ImagesContext);
-    if(context === undefined) throw new Error("Context was used outside of Provider");
-    return context;
+  const context = useContext(ImagesContext);
+  if (context === undefined)
+    throw new Error("Context was used outside of Provider");
+  return context;
 }
 
-export {ImagesProvider, useImages}
+export { ImagesProvider, useImages };
