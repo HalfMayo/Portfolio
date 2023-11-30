@@ -16,19 +16,19 @@ export default function Cv() {
           </div>
           <div className="flex items-center justify-end gap-8 w-full">
             <div
-              className="cursor-pointer p-4 bg-white text-on-surface border-black border-4 shadow-[4px_4px_0_1px_rgba(0,0,0,1)] rounded-sm diff-font text-2xl hover:bg-surface-container"
+              className="cursor-pointer p-4 bg-white text-on-surface border-black border-4 shadow-[4px_4px_0_1px_rgba(0,0,0,1)] rounded-sm diff-font text-3xl hover:bg-surface-container"
               onClick={() => setIsActive(1)}
             >
               Working Exp.
             </div>
             <div
-              className="cursor-pointer p-4 bg-white text-on-surface border-black border-4 shadow-[4px_4px_0_1px_rgba(0,0,0,1)] rounded-sm diff-font text-2xl hover:bg-surface-container"
+              className="cursor-pointer p-4 bg-white text-on-surface border-black border-4 shadow-[4px_4px_0_1px_rgba(0,0,0,1)] rounded-sm diff-font text-3xl hover:bg-surface-container"
               onClick={() => setIsActive(2)}
             >
               Education
             </div>
             <div
-              className="cursor-pointer p-4 bg-white text-on-surface border-black border-4 shadow-[4px_4px_0_1px_rgba(0,0,0,1)] rounded-sm diff-font text-2xl hover:bg-surface-container"
+              className="cursor-pointer p-4 bg-white text-on-surface border-black border-4 shadow-[4px_4px_0_1px_rgba(0,0,0,1)] rounded-sm diff-font text-3xl hover:bg-surface-container"
               onClick={() => setIsActive(3)}
             >
               Skills

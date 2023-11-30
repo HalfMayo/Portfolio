@@ -2,11 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-@font-face {
-  font-family: "KOMIKAX_";
-  src: url("../fonts/KOMIKAX_.ttf");
-}
-
 @layer components {
 
     .bubble::after {
@@ -183,6 +178,6 @@
     }
 
     .diff-font {
-      font-family: 'KOMIKAX_', cursive;
+      font-family: 'Bangers', sans-serif;
     }
 }

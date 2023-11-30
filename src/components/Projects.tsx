@@ -31,8 +31,8 @@ export default function Projects() {
                 <a href={el.link} target="_blank">
                   {hover === i && (
                     <div className="flex flex-col items-center justify-center w-full h-full bg-[#ffd0bd]/75 p-8 gap-4 absolute">
-                      <h2 className="text-2xl">{el.title}</h2>
-                      <p className=" text-sm">{el.description}</p>
+                      <h2 className="text-3xl">{el.title}</h2>
+                      <p>{el.description}</p>
                     </div>
                   )}
                   <img

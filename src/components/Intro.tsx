@@ -13,7 +13,7 @@ export default function Intro() {
           ref={buttonRef}
           className={`absolute z-20 transition-all left-[50%] translate-x-[-50%] top-[25%] ${
             visible ? "opacity-100 duration-500" : "opacity-0 duration-200"
-          } w-[285px] h-[150px] px-5 py-4 bg-white border-black border-4 rounded-full diff-font text-3xl hover:bg-surface-container`}
+          } w-[285px] h-[150px] px-5 py-4 bg-white border-black border-4 rounded-full diff-font text-4xl hover:bg-surface-container`}
           onClick={handleClick}
           onTransitionEnd={displayNone}
         >
@@ -56,17 +56,17 @@ export default function Intro() {
           </div>
           <div className="flex items-center justify-end gap-8 w-full">
             <HashLink smooth to="#projects">
-              <div className="p-4 bg-white text-on-surface border-black border-4 shadow-[4px_4px_0_1px_rgba(0,0,0,1)] rounded-sm diff-font text-2xl hover:bg-surface-container">
+              <div className="p-4 bg-white text-on-surface border-black border-4 shadow-[4px_4px_0_1px_rgba(0,0,0,1)] rounded-sm diff-font text-3xl hover:bg-surface-container">
                 Projects
               </div>
             </HashLink>
             <HashLink smooth to="#cv">
-              <div className="p-4 bg-white text-on-surface border-black border-4 shadow-[4px_4px_0_1px_rgba(0,0,0,1)] rounded-sm diff-font text-2xl hover:bg-surface-container">
+              <div className="p-4 bg-white text-on-surface border-black border-4 shadow-[4px_4px_0_1px_rgba(0,0,0,1)] rounded-sm diff-font text-3xl hover:bg-surface-container">
                 CV
               </div>
             </HashLink>
             <HashLink smooth to="#contacts">
-              <div className="p-4 bg-white text-on-surface border-black border-4 shadow-[4px_4px_0_1px_rgba(0,0,0,1)] rounded-sm diff-font text-2xl hover:bg-surface-container">
+              <div className="p-4 bg-white text-on-surface border-black border-4 shadow-[4px_4px_0_1px_rgba(0,0,0,1)] rounded-sm diff-font text-3xl hover:bg-surface-container">
                 Contacts
               </div>
             </HashLink>
