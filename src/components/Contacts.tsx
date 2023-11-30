@@ -17,7 +17,11 @@ export default function Contacts() {
         </div>
         <div className="flex items-center justify-end gap-8 w-full">
           <div className="p-6 bg-white text-on-surface border-black border-4 shadow-[4px_4px_0_1px_rgba(0,0,0,1)] rounded-sm hover:bg-surface-container">
-            <a href="mailto:barbara.sandrolini@gmail.com" target="_blank">
+            <a
+              href="mailto:barbara.sandrolini@gmail.com"
+              target="_blank"
+              rel="noreferrer"
+            >
               <SvgButton
                 label="Email"
                 svg={Email}
@@ -28,7 +32,11 @@ export default function Contacts() {
             </a>
           </div>
           <div className="p-6 bg-white text-on-surface border-black border-4 shadow-[4px_4px_0_1px_rgba(0,0,0,1)] rounded-sm hover:bg-surface-container">
-            <a href="https://github.com/HalfMayo" target="_blank">
+            <a
+              href="https://github.com/HalfMayo"
+              target="_blank"
+              rel="noreferrer"
+            >
               <SvgButton
                 label="Github"
                 svg={Github}
@@ -39,7 +47,11 @@ export default function Contacts() {
             </a>
           </div>
           <div className="p-6 bg-white text-on-surface border-black border-4 shadow-[4px_4px_0_1px_rgba(0,0,0,1)] rounded-sm hover:bg-surface-container">
-            <a href="https://www.instagram.com/the.barbroid/" target="_blank">
+            <a
+              href="https://www.instagram.com/the.barbroid/"
+              target="_blank"
+              rel="noreferrer"
+            >
               <SvgButton
                 label="Instagram"
                 svg={Instagram}
@@ -53,6 +65,7 @@ export default function Contacts() {
             <a
               href="https://www.linkedin.com/in/barbara-sandrolini/"
               target="_blank"
+              rel="noreferrer"
             >
               <SvgButton
                 label="Linkedin"

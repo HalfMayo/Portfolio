@@ -28,7 +28,7 @@ export default function Projects() {
                 onMouseEnter={() => setHover(i)}
                 onMouseLeave={() => setHover(null)}
               >
-                <a href={el.link} target="_blank">
+                <a href={el.link} target="_blank" rel="noreferrer">
                   {hover === i && (
                     <div className="flex flex-col items-center justify-center w-full h-full bg-[#ffd0bd]/75 p-8 gap-4 absolute">
                       <h2 className="text-3xl">{el.title}</h2>
