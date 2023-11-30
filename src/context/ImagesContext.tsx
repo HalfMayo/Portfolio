@@ -15,6 +15,7 @@ interface ImagesProviderProps {
 
 interface ImagesContextProps {
   width: number;
+  height: number;
   sameRatio: boolean;
   offsetY: number;
   handleClick: () => void;
@@ -91,6 +92,7 @@ function ImagesProvider({ children }: ImagesProviderProps) {
     <ImagesContext.Provider
       value={{
         width,
+        height,
         sameRatio,
         offsetY,
         handleClick,
