@@ -26,8 +26,8 @@ export const ProjectsList = [
     }, {
         url: "../src/assets/images/ill_mdl.png",
         altText: "Material 3-inspired library screenshot",
-        title: "Material 3-inspired library",
-        description: "The React components Storybook library I use for my projects",
+        title: "Material 3 library",
+        description: "The Storybook library with the React components I use for my projects",
         link: "https://material3-library.netlify.app/"
     }
 ]

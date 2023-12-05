@@ -24,7 +24,7 @@ module.exports = {
       'secondary': '#4a6267',
       'secondary-container': '#cde7ec',
       'on-secondary-container': '#051f23',
-      'tertiary-container': '#ffd9e2',
+      'tertiary-container': '#ffd0bd',
       'on-tertiary-container': '#3e001d',
       'disabled': '#D0C9D4'
     },

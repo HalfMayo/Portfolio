@@ -80,13 +80,12 @@ function ImagesProvider({ children }: ImagesProviderProps) {
   }, []);
 
   useEffect(() => {
-    if (
-      innerWidth / innerHeight === 16 / 9 ||
-      innerWidth / innerHeight === 16 / 10
-    ) {
+    if (width / height === 16 / 9 || width / height === 16 / 10) {
       setSameRatio(true);
-    } else setSameRatio(false);
-  }, []);
+    } else {
+      setSameRatio(false);
+    }
+  }, [width, height]);
 
   return (
     <ImagesContext.Provider
