@@ -3,6 +3,7 @@ import { useImages } from "../context/ImagesContext";
 import MenuBig from "./MenuBig";
 import SectionBox from "./SectionBox";
 import BiggerSectionBox from "./BiggerSectionBox";
+import head from "../assets/images/testa.png";
 
 export default function Intro() {
   const { width, height, buttonRef, visible, handleClick, displayNone } =
@@ -10,7 +11,7 @@ export default function Intro() {
 
   return (
     <section id="home">
-      <BgImage src="../src/assets/images/testa.png" />
+      <BgImage src={head} />
       <BiggerSectionBox>
         <button
           ref={buttonRef}

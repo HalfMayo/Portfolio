@@ -5,6 +5,7 @@ import SectionElement from "./SectionElement";
 import SectionBox from "./SectionBox";
 import BiggerSectionBox from "./BiggerSectionBox";
 import CVMenu from "./CVMenu";
+import clarence from "../assets/images/clarence.png";
 
 export default function Cv() {
   //845px
@@ -12,7 +13,7 @@ export default function Cv() {
 
   return (
     <section id="cv">
-      <BgImage src="../src/assets/images/clarence.png" />
+      <BgImage src={clarence} />
       <BiggerSectionBox>
         <SectionBox>
           <SectionTitle

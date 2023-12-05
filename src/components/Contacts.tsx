@@ -8,11 +8,12 @@ import SectionTitle from "./SectionTitle";
 import SectionElement from "./SectionElement";
 import SectionBox from "./SectionBox";
 import BiggerSectionBox from "./BiggerSectionBox";
+import feet from "../assets/images/piedi.png";
 
 export default function Contacts() {
   return (
     <section id="contacts">
-      <BgImage src="../src/assets/images/piedi.png" />
+      <BgImage src={feet} />
       <BiggerSectionBox>
         <SectionBox boxHeight="screen" justify="center" contacts={true}>
           <SectionTitle title="Contacts" subtitle="Let's get in touch!" />

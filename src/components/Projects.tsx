@@ -6,12 +6,13 @@ import BiggerSectionBox from "./BiggerSectionBox";
 import Carousel from "../storybook_components/Carousel";
 import Grid from "./Grid";
 import { useImages } from "../context/ImagesContext";
+import hands from "../assets/images/mani.png";
 
 export default function Projects() {
   const { width } = useImages();
   return (
     <section id="projects">
-      <BgImage src="../src/assets/images/mani.png" />
+      <BgImage src={hands} />
       <BiggerSectionBox>
         <SectionBox>
           <SectionTitle
