@@ -28,6 +28,16 @@ export default function Cv() {
                 children={
                   <p>
                     <strong>
+                      2021 - 2023: Assistant cook (reskilling period)
+                    </strong>
+                  </p>
+                }
+              />
+              <SectionElement
+                bangers={false}
+                children={
+                  <p>
+                    <strong>
                       2020 - 2022: Freelance Concept Artist and Unity3D
                       Programmer
                     </strong>
@@ -140,6 +150,14 @@ export default function Cv() {
             </div>
           ) : isActive === 3 ? (
             <div className="w-full flex flex-col gap-4 overflow-y-auto scrollbar pr-2">
+              <SectionElement
+                bangers={false}
+                children={
+                  <p>
+                    <strong>Next.js (w/Wordpress headless + GraphQL)</strong>
+                  </p>
+                }
+              />
               <SectionElement
                 bangers={false}
                 children={
