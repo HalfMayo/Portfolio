@@ -3,6 +3,7 @@ import personalLib from '../assets/images/ill_pl.png'
 import worldWise from '../assets/images/ill_ww.png'
 import digitalDM from '../assets/images/ill_dm.png'
 import materialLib from '../assets/images/ill_mdl.png'
+import bookClub from '../assets/images/ill_bc.png'
 
 export const ProjectsList = [
     {
@@ -33,7 +34,13 @@ export const ProjectsList = [
         url: materialLib,
         altText: "Material 3-inspired library screenshot",
         title: "Material 3 library",
-        description: "The Storybook library with the React components I use for my projects",
+        description: "The Storybook library with the React components I use for some of my projects",
         link: "https://material3-library.netlify.app/"
+    }, {
+        url: bookClub,
+        altText: "The Book Club blog screenshot",
+        title: "The Book Club (WIP)",
+        description: "My first Next.js project - design and responsive still a work in progress!",
+        link: "https://the-book-club-topaz.vercel.app/"
     }
 ]
