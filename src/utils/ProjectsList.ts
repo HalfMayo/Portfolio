@@ -40,7 +40,7 @@ export const ProjectsList = [
         url: bookClub,
         altText: "The Book Club blog screenshot",
         title: "The Book Club (WIP)",
-        description: "My first Next.js project - design and responsive still a work in progress!",
+        description: "My first Next.js + Wordpress headless project - responsive still under construction!",
         link: "https://the-book-club-topaz.vercel.app/"
     }
 ]
