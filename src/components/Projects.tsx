@@ -22,8 +22,7 @@ export default function Projects() {
         <SectionBox>
           <SectionTitle
             title="What do I do?"
-            subtitle="My projects, including the Storybook library I've developed based
-              on Material design 3."
+            subtitle="My projects, both professional and personal"
           />
 
             <ProjectsMenu isActive={isActive} setIsActive={setIsActive} />

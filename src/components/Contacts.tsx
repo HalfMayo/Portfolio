@@ -1,7 +1,6 @@
 import SvgButton from "../storybook_components/SvgButton";
 import { ReactComponent as Email } from "../assets/svgs/email-1572-svgrepo-com.svg";
 import { ReactComponent as Github } from "../assets/svgs/github-142-svgrepo-com.svg";
-import { ReactComponent as Instagram } from "../assets/svgs/instagram-svgrepo-com (1).svg";
 import { ReactComponent as Linkedin } from "../assets/svgs/linkedin-161-svgrepo-com.svg";
 import BgImage from "./BgImage";
 import SectionTitle from "./SectionTitle";
@@ -42,21 +41,6 @@ export default function Contacts() {
                 <SvgButton
                   label="Github"
                   svg={Github}
-                  color="white"
-                  width="48px"
-                  height="48px"
-                />
-              </a>
-            </SectionElement>
-            <SectionElement>
-              <a
-                href="https://www.instagram.com/the.barbroid/"
-                target="_blank"
-                rel="noreferrer"
-              >
-                <SvgButton
-                  label="Instagram"
-                  svg={Instagram}
                   color="white"
                   width="48px"
                   height="48px"

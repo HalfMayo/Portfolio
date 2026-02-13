@@ -1,39 +1,39 @@
-import multitool from '../assets/images/ill_mt.png'
-import personalLib from '../assets/images/ill_pl.png'
-import worldWise from '../assets/images/ill_ww.png'
-import digitalDM from '../assets/images/ill_dm.png'
-import materialLib from '../assets/images/ill_mdl.png'
+import auser from '../assets/images/auser.png'
+import cremonese from '../assets/images/cremonese.png'
+import mir from '../assets/images/mir.png'
+import darkai from '../assets/images/darkai.png'
+import visitcremona from '../assets/images/visitcremona.png'
 
 export const ProList = [
     {
-        url: multitool,
-        altText: "Auser Lab screenshot",
-        title: "Auser Lab",
-        description: "Piattaforma di e-learning realizzata in PHP per Auser Cremona (non responsive). Include gestione chiamate via Zoom con endpoint su Heroku e gestione Google Cloud Storage per l'upload di file di grandi dimensioni. Pagamenti gestiti via Stripe",
-        link: "https://auserlabcr.it/"
+        url: darkai,
+        altText: "Darkai Grillz Configurator app screenshot",
+        title: "Darkai Grillz Configurator (WIP)",
+        description: "3D Grillz Configurator for Darkai: Front End + Backoffice in Next.js + R3F + Supabase",
+        link: "https://darkai-lab.netlify.app/"
     }, {
-        url: personalLib,
+        url: visitcremona,
         altText: "Visit Cremona app screenshot",
-        title: "Visit Cremona",
-        description: "Piattaforma di ticketing realizzata con Next per Visit Cremona. Include l'integrazione di API di terze parti per la gestione dei prodotti e dei pagamenti. CMS realizzato con Strapi legato a database in Postgres, deploy realizzato tramite Railway",
+        title: "Visit Cremona (WIP)",
+        description: "Ticketing platform for Visit Cremona: Front End + CMS in Next.js + Strapi + Railway",
         link: "https://www.visitcremona.com/"
     }, {
-        url: worldWise,
-        altText: "MIR app screenshot",
-        title: "MIR",
-        description: "Piattaforma di archiviazione e consultazione di strumenti ad arco realizzata in Nuxt per MIR. Database e accessi gestiti via Back4App, abbonamenti e pagamenti gestiti via Stripe",
-        link: "https://mirweb.it/"
-    }, {
-        url: digitalDM,
-        altText: "Darkai Grillz Configurator app screenshot",
-        title: "Darkai Grillz Configurator",
-        description: "Configuratore 3D di gioielli personalizzabili realizzato con R3F e Next per Darkai. Database e accessi gestiti via Supabase",
-        link: ""
-    }, {
-        url: materialLib,
+        url: cremonese,
         altText: "Cremonese live commentary library screenshot",
         title: "Cremonese Live Results",
-        description: "Visualizzazione dei dati restituiti dalle API di Kama Sport, realizzata in PHP, per le sezioni Classifica, Calendario, Risultati e Live Commentary del sito ufficiale della Cremonese",
-        link: "(https://uscremonese.it/"
-    },
+        description: "API returned data visualization for U.S. Cremonese in PHP (sections: Classifica, Calendario, Risultati, Live Commentary)",
+        link: "https://uscremonese.it/"
+    }, {
+        url: mir,
+        altText: "MIR app screenshot",
+        title: "MIR",
+        description: "Bowed Instrument Archive for MIR: Front End + Backoffice in Nuxt.js + Back4App + Stripe",
+        link: "https://mirweb.it/"
+    }, {
+        url: auser,
+        altText: "Auser Lab screenshot",
+        title: "Auser Lab",
+        description: "E-learning platform for Auser Cremona: Front End (not responsive) + Backoffice in PHP + Google Cloud Storage + Heroku + Stripe",
+        link: "https://auserlabcr.it/"
+    }
 ]

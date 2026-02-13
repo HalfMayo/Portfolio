@@ -23,6 +23,16 @@ export default function Cv() {
           <CVMenu isActive={isActive} setIsActive={setIsActive} />
           {isActive === 1 ? (
             <div className="w-full flex flex-col gap-4 overflow-y-auto scrollbar pr-2">
+                <SectionElement
+                    bangers={false}
+                    children={
+                        <p>
+                            <strong>
+                                2024 - present: Front End Developer at Nebbia Phygital Lab (Cremona, IT)
+                            </strong>
+                        </p>
+                    }
+                />
               <SectionElement
                 bangers={false}
                 children={
@@ -150,11 +160,19 @@ export default function Cv() {
             </div>
           ) : isActive === 3 ? (
             <div className="w-full flex flex-col gap-4 overflow-y-auto scrollbar pr-2">
+                <SectionElement
+                    bangers={false}
+                    children={
+                        <p>
+                            <strong>Three.js (vanilla and w/ R3F)</strong>
+                        </p>
+                    }
+                />
               <SectionElement
                 bangers={false}
                 children={
                   <p>
-                    <strong>Next.js (w/Wordpress headless + GraphQL)</strong>
+                    <strong>Next.js (w/Wordpress headless + GraphQL and w/Strapi)</strong>
                   </p>
                 }
               />
@@ -175,6 +193,14 @@ export default function Cv() {
                   </p>
                 }
               />
+                <SectionElement
+                    bangers={false}
+                    children={
+                        <p>
+                            <strong>Vue + Nuxt.js</strong>
+                        </p>
+                    }
+                />
               <SectionElement
                 bangers={false}
                 children={
@@ -183,6 +209,14 @@ export default function Cv() {
                   </p>
                 }
               />
+                <SectionElement
+                    bangers={false}
+                    children={
+                        <p>
+                            <strong>PHP</strong>
+                        </p>
+                    }
+                />
               <SectionElement
                 bangers={false}
                 children={
@@ -191,6 +225,7 @@ export default function Cv() {
                   </p>
                 }
               />
+
               <SectionElement
                 bangers={false}
                 children={
@@ -207,10 +242,18 @@ export default function Cv() {
                 bangers={false}
                 children={
                   <p>
-                    <strong>Visual Studio Code, Git (w/GitHub)</strong>
+                    <strong>PHPStorm / WebStorm</strong>
                   </p>
                 }
               />
+                <SectionElement
+                    bangers={false}
+                    children={
+                        <p>
+                            <strong>Git (w/Github and w/ BitBucket)</strong>
+                        </p>
+                    }
+                />
               <SectionElement
                 bangers={false}
                 children={
