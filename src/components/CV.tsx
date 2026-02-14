@@ -28,8 +28,9 @@ export default function Cv() {
                     children={
                         <p>
                             <strong>
-                                2024 - present: Front End Developer at Nebbia Phygital Lab (Cremona, IT)
-                            </strong>
+                                2024 - present: Front End Developer
+                            </strong> -
+                            Nebbia Phygital Lab, Cremona
                         </p>
                     }
                 />

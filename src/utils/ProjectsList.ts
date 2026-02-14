@@ -1,3 +1,4 @@
+import sporter from '../assets/images/sporter.png'
 import multitool from '../assets/images/ill_mt.png'
 import personalLib from '../assets/images/ill_pl.png'
 import worldWise from '../assets/images/ill_ww.png'
@@ -6,6 +7,12 @@ import materialLib from '../assets/images/ill_mdl.png'
 
 export const ProjectsList = [
     {
+        url: sporter,
+        altText: "Sport in Emilia Romagna app screenshot",
+        title: "Sport in ER (WIP)",
+        description: "A project to study different methods of 3D data visualization",
+        link: "https://sport-er.netlify.app/"
+    }, {
         url: multitool,
         altText: "MultiTool app screenshot",
         title: "MultiTool",
