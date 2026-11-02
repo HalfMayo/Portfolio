@@ -1,4 +1,4 @@
-import sfondo from "./assets/images/bgg.png";
+import sfondo from "./assets/images/bgg.webp";
 import Intro from "./components/Intro";
 import Projects from "./components/Projects";
 import Cv from "./components/CV";

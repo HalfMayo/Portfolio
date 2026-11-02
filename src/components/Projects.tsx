@@ -8,7 +8,7 @@ import BiggerSectionBox from "./BiggerSectionBox";
 import Carousel from "../storybook_components/Carousel";
 import Grid from "./Grid";
 import { useImages } from "../context/ImagesContext";
-import hands from "../assets/images/mani.png";
+import hands from "../assets/images/mani.webp";
 import ProjectsMenu from "./ProjectsMenu.tsx";
 
 export default function Projects() {

@@ -1,9 +1,9 @@
-import sporter from '../assets/images/sporter.png'
-import multitool from '../assets/images/ill_mt.png'
-import personalLib from '../assets/images/ill_pl.png'
-import worldWise from '../assets/images/ill_ww.png'
-import digitalDM from '../assets/images/ill_dm.png'
-import materialLib from '../assets/images/ill_mdl.png'
+import sporter from '../assets/images/sporter.webp'
+import multitool from '../assets/images/ill_mt.webp'
+import personalLib from '../assets/images/ill_pl.webp'
+import worldWise from '../assets/images/ill_ww.webp'
+import digitalDM from '../assets/images/ill_dm.webp'
+import materialLib from '../assets/images/ill_mdl.webp'
 
 export const ProjectsList = [
     {

@@ -1,8 +1,8 @@
-import auser from '../assets/images/auser.png'
-import cremonese from '../assets/images/cremonese.png'
-import mir from '../assets/images/mir.png'
-import darkai from '../assets/images/darkai.png'
-import visitcremona from '../assets/images/visitcremona.png'
+import auser from '../assets/images/auser.webp'
+import cremonese from '../assets/images/cremonese.webp'
+import mir from '../assets/images/mir.webp'
+import darkai from '../assets/images/darkai.webp'
+import visitcremona from '../assets/images/visitcremona.webp'
 
 export const ProList = [
     {

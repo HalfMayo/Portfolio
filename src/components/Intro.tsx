@@ -3,7 +3,7 @@ import { useImages } from "../context/ImagesContext";
 import MenuBig from "./MenuBig";
 import SectionBox from "./SectionBox";
 import BiggerSectionBox from "./BiggerSectionBox";
-import head from "../assets/images/testa.png";
+import head from "../assets/images/testa.webp";
 
 export default function Intro() {
   const { width, height, buttonRef, visible, handleClick, displayNone } =

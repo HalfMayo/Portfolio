@@ -5,7 +5,7 @@ import SectionElement from "./SectionElement";
 import SectionBox from "./SectionBox";
 import BiggerSectionBox from "./BiggerSectionBox";
 import CVMenu from "./CVMenu";
-import clarence from "../assets/images/clarence.png";
+import clarence from "../assets/images/clarence.webp";
 
 export default function Cv() {
   //845px

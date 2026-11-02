@@ -7,7 +7,7 @@ import SectionTitle from "./SectionTitle";
 import SectionElement from "./SectionElement";
 import SectionBox from "./SectionBox";
 import BiggerSectionBox from "./BiggerSectionBox";
-import feet from "../assets/images/piedi.png";
+import feet from "../assets/images/piedi.webp";
 
 export default function Contacts() {
   return (
