@@ -190,7 +190,7 @@ export default function Cv() {
                 className="ml-8 bg-white"
                 children={
                   <p>
-                    <strong>React Query (w/Supabase), React Router</strong>
+                    <strong>TanStack Query (w/Supabase), TanStack Router</strong>
                   </p>
                 }
               />

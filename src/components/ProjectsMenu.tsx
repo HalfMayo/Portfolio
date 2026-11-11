@@ -23,13 +23,13 @@ export default function ProjectsMenu({
       ) : (
         <div className="flex items-center justify-end gap-8 w-full">
           <SectionElement
-            className={isActive === 1 ? "bg-tertiary-container" : "bg-white"}
+            className={isActive === 2 ? "bg-tertiary-container" : "bg-white"}
             children={<p style={{userSelect: 'none', WebkitUserSelect: 'none'}}>Professional Projects</p>}
             onClick={() => setIsActive(1)}
             smallMenu={true}
           />
           <SectionElement
-            className={isActive === 2 ? "bg-tertiary-container" : "bg-white"}
+            className={isActive === 1 ? "bg-tertiary-container" : "bg-white"}
             children={<p style={{userSelect: 'none', WebkitUserSelect: 'none'}}>Personal Projects</p>}
             onClick={() => setIsActive(2)}
             smallMenu={true}

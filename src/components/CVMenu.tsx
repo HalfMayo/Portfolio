@@ -25,25 +25,25 @@ export default function CVMenu({
       ) : (
         <div className="flex items-center justify-end gap-8 w-full">
           <SectionElement
-            className={isActive === 1 ? "bg-tertiary-container" : "bg-white"}
+            className={isActive === 1 ? "bg-white" : "bg-tertiary-container"}
             children={<p style={{userSelect: 'none', WebkitUserSelect: 'none'}}>Work Exp.</p>}
             onClick={() => setIsActive(1)}
             smallMenu={true}
           />
           <SectionElement
-            className={isActive === 2 ? "bg-tertiary-container" : "bg-white"}
+            className={isActive === 2 ? "bg-white" : "bg-tertiary-container"}
             children={<p style={{userSelect: 'none', WebkitUserSelect: 'none'}}>Tech Skills</p>}
             onClick={() => setIsActive(2)}
             smallMenu={true}
           />
           <SectionElement
-            className={isActive === 3 ? "bg-tertiary-container" : "bg-white"}
+            className={isActive === 3 ? "bg-white" : "bg-tertiary-container"}
             children={<p style={{userSelect: 'none', WebkitUserSelect: 'none'}}>Softwares/Tools</p>}
             onClick={() => setIsActive(3)}
             smallMenu={true}
           />
           <SectionElement
-              className={isActive === 4 ? "bg-tertiary-container" : "bg-white"}
+              className={isActive === 4 ? "bg-white" : "bg-tertiary-container"}
               children={<p style={{userSelect: 'none', WebkitUserSelect: 'none'}}>Education</p>}
               onClick={() => setIsActive(4)}
               smallMenu={true}
