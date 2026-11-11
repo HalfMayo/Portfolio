@@ -22,7 +22,7 @@ export default function SectionElement({
           : bangers
           ? "diff-font text-3xl cursor-pointer hover:bg-surface-container"
           : "text-md sm:text-xl"
-      } p-4 text-on-surface border-black border-4 shadow-[4px_4px_0_1px_rgba(0,0,0,1)] rounded-sm`}
+      } p-4 text-on-surface border-black border-4 shadow-[4px_4px_0_1px_rgba(0,0,0,1)] rounded-xs`}
       onClick={onClick}
     >
       {children}

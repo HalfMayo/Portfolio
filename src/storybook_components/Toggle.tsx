@@ -1,5 +1,5 @@
 import {SkillsProps, ToggleProps} from "../interfaces/InfoProps"
-import { ReactComponent as Arrow } from '../assets/svgs/right-chevron-svgrepo-com.svg'
+import Arrow from '../assets/svgs/right-chevron-svgrepo-com.svg?react'
 
 interface ToggleElProps {
     info: ToggleProps | SkillsProps;

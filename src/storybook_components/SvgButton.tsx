@@ -12,7 +12,7 @@ interface SvgProps {
   onMouseOver?: () => void;
   onMouseLeave?: () => void;
   type?: "button" | "submit" | "reset";
-  color?: string; //1 path, whose "fill" attribute is set to "currentColor". These svgs are imported { ReactComponent as SvgName } from ''
+  color?: string; // SVG paths whose "fill" attribute is set to "currentColor" inherit this color.
   face?: string; //2 or more paths; svgs are transformed via npx @svgr/cli and put in .tsx files, where they're bound to the type of a custom interface and return a JSX.Element
   faceshadow?: string;
   feature?: string;

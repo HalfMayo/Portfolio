@@ -1,6 +1,25 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
+
+@theme {
+  --color-outline: #79747e;
+  --color-on-surface: #1c1b1f;
+  --color-surface: #fffbfe;
+  --color-surface-variant: #e7e0ec;
+  --color-surface-container: #f5f0f4;
+  --color-surface-low: #d0c9d4;
+  --color-surface-high: #f5f0f4;
+  --color-surface-highest: #ebe6ea;
+  --color-primary: #006973;
+  --color-on-primary: #ffffff;
+  --color-primary-container: #95f1ff;
+  --color-on-primary-container: #001f24;
+  --color-secondary: #4a6267;
+  --color-secondary-container: #cde7ec;
+  --color-on-secondary-container: #051f23;
+  --color-tertiary-container: #ffd0bd;
+  --color-on-tertiary-container: #3e001d;
+  --color-disabled: #d0c9d4;
+}
 
 @layer components {
 
@@ -55,16 +74,16 @@
       @apply border-none bg-surface-low w-5 h-5 rounded-full;
     }
 
-      ::-webkit-scrollbar.scrollbar {
+      .scrollbar::-webkit-scrollbar {
         @apply w-1;
       }
       
-      ::-webkit-scrollbar-track.scrollbar {
+      .scrollbar::-webkit-scrollbar-track {
         @apply bg-surface-variant; 
       }
        
-      ::-webkit-scrollbar-thumb.scrollbar {
-        @apply bg-outline rounded-sm;
+      .scrollbar::-webkit-scrollbar-thumb {
+        @apply bg-outline rounded-xs;
       }
 
       .brief-title {
@@ -108,7 +127,7 @@
       
       /* Create a custom checkbox */
       .checkbox {
-        @apply absolute left-0.5 h-4 w-4 bg-surface border-2 border-solid border-outline rounded-sm;
+        @apply absolute left-0.5 h-4 w-4 bg-surface border-2 border-solid border-outline rounded-xs;
       }
     
       /* When the checkbox is checked, add a blue background */

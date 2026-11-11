@@ -24,7 +24,7 @@ export default function Intro() {
           NEED A REACT DEVELOPER?
         </button>
         <SectionBox justify="center">
-          <div className="p-6 sm:p-12 bg-white text-on-surface border-black border-4 shadow-[7px_7px_0_1px_rgba(0,0,0,1)] rounded-sm">
+          <div className="p-6 sm:p-12 bg-white text-on-surface border-black border-4 shadow-[7px_7px_0_1px_rgba(0,0,0,1)] rounded-xs">
             <h1 className="font-bold text-xl sm:text-4xl pb-2 sm:pb-4">
               Hi! I'm Barbara.
             </h1>

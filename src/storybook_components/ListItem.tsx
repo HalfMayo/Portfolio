@@ -1,8 +1,8 @@
-import { ReactComponent as Handler } from '../assets/svgs/drag-vertical-svgrepo-com.svg'
-import { ReactComponent as Edit } from '../assets/svgs/write-svgrepo-com.svg'
-import { ReactComponent as Delete } from '../assets/svgs/bin-delete-recycle-svgrepo-com.svg'
-import { ReactComponent as Dots } from '../assets/svgs/dots-3-horizontal-svgrepo-com.svg'
-import { ReactComponent as Plus } from '../assets/svgs/plus-svgrepo-com.svg'
+import Handler from '../assets/svgs/drag-vertical-svgrepo-com.svg?react'
+import Edit from '../assets/svgs/write-svgrepo-com.svg?react'
+import Delete from '../assets/svgs/bin-delete-recycle-svgrepo-com.svg?react'
+import Dots from '../assets/svgs/dots-3-horizontal-svgrepo-com.svg?react'
+import Plus from '../assets/svgs/plus-svgrepo-com.svg?react'
 import { Reorder, useDragControls,motion } from "framer-motion";
 import Checkbox from "./Checkbox";
 import SvgButton from "./SvgButton";

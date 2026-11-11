@@ -1,6 +1,6 @@
 import { useState } from "react";
-import { ReactComponent as Hamburger } from "../assets/svgs/hamburger-7-svgrepo-com.svg";
-import { ReactComponent as Close } from "../assets/svgs/close-circle-svgrepo-com.svg";
+import Hamburger from "../assets/svgs/hamburger-7-svgrepo-com.svg?react";
+import Close from "../assets/svgs/close-circle-svgrepo-com.svg?react";
 import { useImages } from "../context/ImagesContext";
 import SvgButton from "../storybook_components/SvgButton";
 import { HashLink } from "react-router-hash-link";
@@ -60,7 +60,7 @@ export default function MenuMobile() {
         <div
           className={`fixed top-[2vh] left-[50%] translate-x-[-50%] z-20 cursor-pointer ${
             width >= 640 ? "p-4" : "p-2"
-          } bg-white text-on-surface border-black border-4 shadow-[4px_4px_0_1px_rgba(0,0,0,1)] rounded-sm hover:bg-surface-container`}
+          } bg-white text-on-surface border-black border-4 shadow-[4px_4px_0_1px_rgba(0,0,0,1)] rounded-xs hover:bg-surface-container`}
         >
           <SvgButton
             label="menu"

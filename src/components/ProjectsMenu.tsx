@@ -15,7 +15,7 @@ export default function ProjectsMenu({
         <select
           value={isActive}
           onChange={(e) => setIsActive(Number(e.target.value))}
-          className="text-center w-full p-3 diff-font text-2xl border-black border-4 shadow-[4px_4px_0_1px_rgba(0,0,0,1)] rounded-sm hover:bg-surface-container focus:outline-none"
+          className="text-center w-full p-3 diff-font text-2xl border-black border-4 shadow-[4px_4px_0_1px_rgba(0,0,0,1)] rounded-xs hover:bg-surface-container focus:outline-none"
         >
           <option value="1">Professional Projects</option>
           <option value="2">Personal Projects</option>

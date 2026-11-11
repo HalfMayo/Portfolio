@@ -1,5 +1,5 @@
-import { ReactComponent as Lock } from '../assets/svgs/lock-svgrepo-com.svg'
-import { ReactComponent as Unlock } from '../assets/svgs/lock-open-svgrepo-com.svg'
+import Lock from '../assets/svgs/lock-svgrepo-com.svg?react'
+import Unlock from '../assets/svgs/lock-open-svgrepo-com.svg?react'
 import { useState, useRef, useEffect } from 'react';
 import SliderProps from '../interfaces/SliderProps';
 

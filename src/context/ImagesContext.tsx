@@ -17,10 +17,10 @@ interface ImagesContextProps {
   width: number;
   height: number;
   sameRatio: boolean;
-  offsetY: number;
+  isScrolled: boolean;
   handleClick: () => void;
   displayNone: () => void;
-  buttonRef: RefObject<HTMLButtonElement>;
+  buttonRef: RefObject<HTMLButtonElement | null>;
   visible: boolean;
 }
 
@@ -30,13 +30,13 @@ function ImagesProvider({ children }: ImagesProviderProps) {
   const [width, setWidth] = useState<number>(window.innerWidth);
   const [height, setHeight] = useState<number>(window.innerHeight);
   const [sameRatio, setSameRatio] = useState<boolean>(false);
-  const [offsetY, setOffsetY] = useState<number>(0);
+  const [isScrolled, setIsScrolled] = useState<boolean>(false);
   const [visible, setVisible] = useState<boolean>(true);
 
   const buttonRef = useRef<HTMLButtonElement>(null);
 
   const handleClick = useCallback(function handleClick() {
-    setOffsetY(50);
+    setIsScrolled(true);
     setVisible(false);
   }, []);
 
@@ -46,14 +46,13 @@ function ImagesProvider({ children }: ImagesProviderProps) {
   }
 
   function scrollFromTop() {
-    if (window.scrollY > 100) return;
-    else if (window.scrollY === 0 && buttonRef.current) {
-      setOffsetY(window.scrollY);
-      setVisible(true);
+    const isAtTop = window.scrollY === 0;
+
+    setIsScrolled(!isAtTop);
+    setVisible(isAtTop);
+
+    if (isAtTop && buttonRef.current) {
       buttonRef.current.style.display = "block";
-    } else {
-      setOffsetY(window.scrollY);
-      setVisible(false);
     }
   }
 
@@ -72,10 +71,10 @@ function ImagesProvider({ children }: ImagesProviderProps) {
   }, []);
 
   useEffect(() => {
-    document.addEventListener("scroll", scrollFromTop);
+    window.addEventListener("scroll", scrollFromTop, { passive: true });
 
     return () => {
-      document.removeEventListener("scroll", scrollFromTop);
+      window.removeEventListener("scroll", scrollFromTop);
     };
   }, []);
 
@@ -93,7 +92,7 @@ function ImagesProvider({ children }: ImagesProviderProps) {
         width,
         height,
         sameRatio,
-        offsetY,
+        isScrolled,
         handleClick,
         displayNone,
         buttonRef,

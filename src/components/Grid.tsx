@@ -9,7 +9,7 @@ export default function Grid({ elements }: { elements: AltImageProps[] }) {
       {elements.map((el, i) => (
         <li
           key={i}
-          className={`relative bg-white text-on-surface border-black border-4 shadow-[4px_4px_0_1px_rgba(0,0,0,1)] rounded-sm diff-font text-center ${
+          className={`relative bg-white text-on-surface border-black border-4 shadow-[4px_4px_0_1px_rgba(0,0,0,1)] rounded-xs diff-font text-center ${
             i === elements.length - 1 ? "col-start-2" : ""
           }`}
           onMouseEnter={() => setHover(i)}

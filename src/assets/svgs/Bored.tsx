@@ -6,7 +6,7 @@ const BoredEmoji : ExtendedProps = ({
     face = "#FFFBFE",
     faceshadow = "#EBE6EA",
     feature = "#1C1B1F"
-}): JSX.Element => (
+}) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
     xmlSpace="preserve"

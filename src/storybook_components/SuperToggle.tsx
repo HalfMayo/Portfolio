@@ -1,6 +1,6 @@
 import {AccordionElProps} from "../interfaces/InfoProps"
 import Accordion from "./Accordion";
-import { ReactComponent as Arrow } from '../assets/svgs/right-chevron-svgrepo-com.svg'
+import Arrow from '../assets/svgs/right-chevron-svgrepo-com.svg?react'
 
 interface SuperToggleElProps {
     info: AccordionElProps;

@@ -1,7 +1,7 @@
 import SvgButton from "../storybook_components/SvgButton";
-import { ReactComponent as Email } from "../assets/svgs/email-1572-svgrepo-com.svg";
-import { ReactComponent as Github } from "../assets/svgs/github-142-svgrepo-com.svg";
-import { ReactComponent as Linkedin } from "../assets/svgs/linkedin-161-svgrepo-com.svg";
+import Email from "../assets/svgs/email-1572-svgrepo-com.svg?react";
+import Github from "../assets/svgs/github-142-svgrepo-com.svg?react";
+import Linkedin from "../assets/svgs/linkedin-161-svgrepo-com.svg?react";
 import BgImage from "./BgImage";
 import SectionTitle from "./SectionTitle";
 import SectionElement from "./SectionElement";

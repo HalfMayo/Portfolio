@@ -5,7 +5,7 @@ interface ImageProps {
 }
 
 export default function BgImage({ src }: ImageProps) {
-  const { width, height, offsetY, sameRatio } = useImages();
+  const { width, isScrolled, sameRatio } = useImages();
 
   return (
     <>
@@ -22,23 +22,17 @@ export default function BgImage({ src }: ImageProps) {
                 ? "contain"
                 : "cover",
             objectPosition:
-              offsetY === 0
+              !isScrolled
                 ? ""
-                : offsetY > 0 && width >= 540 && width < 1536
+                : width >= 540 && width < 1536
                 ? "75%"
-                : offsetY > 0 &&
-                  ((width >= 1536 && width < 1920) ||
-                    (width >= 1920 && width < 2560 && !sameRatio))
+                : (width >= 1536 && width < 1920) ||
+                  (width >= 1920 && width < 2560 && !sameRatio)
                 ? "150%"
-                : offsetY > 0 && width >= 1920 && !sameRatio
+                : width >= 1920 && !sameRatio
                 ? "-200%"
                 : "65%",
-            left:
-              offsetY > 0 &&
-              (sameRatio ||
-                (width >= 1920 && !sameRatio && height >= 800 && height < 1080))
-                ? "-40%"
-                : "0%",
+            left: isScrolled ? "-40%" : "0%",
           }}
         />
       </div>

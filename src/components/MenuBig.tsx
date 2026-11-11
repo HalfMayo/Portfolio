@@ -4,7 +4,7 @@ import SectionElement from "./SectionElement";
 export default function MenuBig() {
   return (
     <>
-      <div className="px-12 py-4 bg-white text-on-surface border-black border-4 shadow-[4px_4px_0_1px_rgba(0,0,0,1)] rounded-sm w-full font-bold text-lg">
+      <div className="px-12 py-4 bg-white text-on-surface border-black border-4 shadow-[4px_4px_0_1px_rgba(0,0,0,1)] rounded-xs w-full font-bold text-lg">
         {" "}
         And now choose...
       </div>

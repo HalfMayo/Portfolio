@@ -6,8 +6,8 @@ import Card from "./Card";
 import Image from "./Image";
 import AltImage from "./AltImage";
 import SvgButton from "./SvgButton";
-import { ReactComponent as PreviousElement } from "../assets/svgs/left-chevron-svgrepo-com.svg";
-import { ReactComponent as NextElement } from "../assets/svgs/right-chevron-svgrepo-com.svg";
+import PreviousElement from "../assets/svgs/left-chevron-svgrepo-com.svg?react";
+import NextElement from "../assets/svgs/right-chevron-svgrepo-com.svg?react";
 import CardImage from "./CardImage";
 import { useImages } from "../context/ImagesContext";
 
@@ -146,7 +146,7 @@ export default function Carousel({ elements, alternative }: Carousel) {
         <div
           className={`${
             width >= 640 || (width < 540 && height > 840)
-              ? "cursor-pointer bg-white text-on-surface border-black border-4 shadow-[4px_4px_0_1px_rgba(0,0,0,1)] rounded-sm hover:bg-surface-container"
+              ? "cursor-pointer bg-white text-on-surface border-black border-4 shadow-[4px_4px_0_1px_rgba(0,0,0,1)] rounded-xs hover:bg-surface-container"
               : ""
           } ${width < 540 && height > 840 ? "p-2" : "p-4"}`}
         >
@@ -161,7 +161,7 @@ export default function Carousel({ elements, alternative }: Carousel) {
         <div
           className={`${
             width >= 640 || (width < 540 && height > 840)
-              ? "cursor-pointer bg-white text-on-surface border-black border-4 shadow-[4px_4px_0_1px_rgba(0,0,0,1)] rounded-sm hover:bg-surface-container"
+              ? "cursor-pointer bg-white text-on-surface border-black border-4 shadow-[4px_4px_0_1px_rgba(0,0,0,1)] rounded-xs hover:bg-surface-container"
               : ""
           } ${width < 540 && height > 840 ? "p-2" : "p-4"}`}
         >
