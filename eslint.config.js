@@ -5,13 +5,19 @@ import reactRefresh from 'eslint-plugin-react-refresh'
 import globals from 'globals'
 import tseslint from 'typescript-eslint'
 
+const tsFiles = ['src/**/*.{ts,tsx}']
+
 export default defineConfig([
   {
     ignores: ['dist'],
   },
   js.configs.recommended,
-  ...tseslint.configs.recommendedTypeChecked,
+  ...tseslint.configs.recommendedTypeChecked.map((config) => ({
+    ...config,
+    files: tsFiles,
+  })),
   {
+    files: tsFiles,
     languageOptions: {
       ecmaVersion: 2020,
       globals: globals.browser,
